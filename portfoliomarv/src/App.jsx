@@ -67,7 +67,7 @@ function App() {
               </svg>
             </a>
             <a
-              href="https://www.instagram.com/in/marv_ar"
+              href="https://www.instagram.com/marv_ar"
               target="_blank"
               rel="noopener noreferrer"
             >
