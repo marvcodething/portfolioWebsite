@@ -105,36 +105,39 @@ function App() {
         </div>
       </div>
       <div
-  ref={aboutmeRef}
-  className={`min-h-screen flex flex-col items-center justify-center mt-20 transition-opacity duration-2000 ${
-    aboutmeInView ? "opacity-100" : "opacity-0"
-  }`}
->
-  <div className="flex flex-col md:flex-row items-center justify-start md:justify-between w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-8 mt-14">
-    {/* Text Section */}
-    <div className="md:w-1/2">
-      <h1 className="text-4xl font-bold text-stone-300 mb-4">About Me</h1>
-      <p className="text-stone-300 mt-4">
-        I’m a student at Occidental College, studying Computer Science and Media
-        Arts and Culture. I thrive at the intersection of creativity and
-        technology, exploring how code can be used as a medium for storytelling
-        and cultural expression. I’m passionate about crafting experiences that
-        inspire, engage, and empower—whether through interactive media,
-        accessible applications, or tools for civic engagement. My goal is to
-        create innovative digital works that bridge technical precision with
-        artistic vision, amplifying voices and ideas that spark change.
-      </p>
-    </div>
-    {/* Image Section */}
-    <div className="md:w-1/2 flex justify-center">
-      <img
-        src={portrait}
-        alt="Portrait"
-        className="rounded-lg shadow-lg max-w-full h-auto"
-      />
-    </div>
-  </div>
-</div>
+        ref={aboutmeRef}
+        className={`min-h-screen flex flex-col items-center justify-center mt-20 transition-opacity duration-2000 ${
+          aboutmeInView ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-between w-full max-w-4xl space-y-4 md:space-y-0 md:space-x-8 mt-14">
+          {/* Text Section */}
+          <div className="md:w-1/2 text-center md:text-left">
+            {" "}
+            {/* Adjusted alignment */}
+            <h1 className="text-4xl font-bold text-stone-300 mb-4">About Me</h1>
+            <p className="text-stone-300 mt-4">
+              I’m a student at Occidental College, studying Computer Science and
+              Media Arts and Culture. I thrive at the intersection of creativity
+              and technology, exploring how code can be used as a medium for
+              storytelling and cultural expression. I’m passionate about
+              crafting experiences that inspire, engage, and empower—whether
+              through interactive media, accessible applications, or tools for
+              civic engagement. My goal is to create innovative digital works
+              that bridge technical precision with artistic vision, amplifying
+              voices and ideas that spark change.
+            </p>
+          </div>
+          {/* Image Section */}
+          <div className="md:w-1/2 flex justify-center">
+            <img
+              src={portrait}
+              alt="Portrait"
+              className="rounded-lg shadow-lg max-w-full h-auto"
+            />
+          </div>
+        </div>
+      </div>
 
       <div className="min-h-screen flex flex-col items-center justify-center mt-20">
         <div className="flex flex-col items-center justify-center w-full px-10">
@@ -148,7 +151,9 @@ function App() {
               Current Projects
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl">
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
+                {" "}
+                {/* Adjusted width */}
                 <figure>
                   <img src={roseShot} alt="RosePic" />
                 </figure>
@@ -174,13 +179,16 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
                 <figure>
                   <img src={schedShot} alt="schedPic" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">BioChem Scheduling Website</h2>
-                  <p>Scheduling helper for Occidental College, working with a group of 4 students.</p>
+                  <p>
+                    Scheduling helper for Occidental College, working with a
+                    group of 4 students.
+                  </p>
                   <div className="card-actions justify-between">
                     <a href="https://github.com/MA0610/SchedulingWebsite">
                       <svg
@@ -200,7 +208,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
                 <figure>
                   <img src={typeShot} alt="typePic" />
                 </figure>
@@ -240,13 +248,16 @@ function App() {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl mb-14">
               {/* Add your cards here */}
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
                 <figure>
                   <img src={twitShot} alt="schedPic" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Twitter/X Clone</h2>
-                  <p>WebApp with all main functionality of social media website Twitter/X.</p>
+                  <p>
+                    WebApp with all main functionality of social media website
+                    Twitter/X.
+                  </p>
                   <div className="card-actions justify-between">
                     <a href="https://github.com/marvcodething/twitter-clone">
                       <svg
@@ -269,13 +280,16 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
                 <figure>
                   <img src={loanPic} alt="schedPic" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">ML Loan Prediction WebApp</h2>
-                  <p>Loan acceptance prediction model wrapped in a Flask API and React frontend.</p>
+                  <p>
+                    Loan acceptance prediction model wrapped in a Flask API and
+                    React frontend.
+                  </p>
                   <div className="card-actions justify-between">
                     <a href="https://github.com/marvcodething/loanprediction">
                       <svg
@@ -298,13 +312,16 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
                 <figure>
                   <img src={mushieShot} alt="schedPic" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">Mushie World</h2>
-                  <p>Visual Novel demo built in Ren'py with a multidisciplinary team.</p>
+                  <p>
+                    Visual Novel demo built in Ren'py with a multidisciplinary
+                    team.
+                  </p>
                   <div className="card-actions justify-between">
                     <a href="https://github.com/marvcodething/MushieWorld">
                       <svg
@@ -327,30 +344,29 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="card bg-base-100 w-96 shadow-xl">
+              <div className="card bg-base-100 w-full sm:w-96 shadow-xl">
                 <figure>
                   <img src={cnvpShot} alt="schedPic" />
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">CNVP Interactive Map Project</h2>
-                  <p>Broadband internet accessibility mapping for indigenous populations in California.</p>
-                    <div className="card-actions justify-end">
-                      <div className="badge badge-outline">Leaflet.js</div>
-                      <div className="badge badge-outline">HTML/CSS</div>
-                      <div className="badge badge-outline">JavaScript</div>
-                    </div>
+                  <p>
+                    Broadband internet accessibility mapping for indigenous
+                    populations in California.
+                  </p>
+                  <div className="card-actions justify-end">
+                    <div className="badge badge-outline">Leaflet.js</div>
+                    <div className="badge badge-outline">HTML/CSS</div>
+                    <div className="badge badge-outline">JavaScript</div>
+                  </div>
                 </div>
               </div>
-              
             </div>
           </div>
-          
         </div>
-        
       </div>
       <Footer></Footer>
     </div>
-    
   );
 }
 
