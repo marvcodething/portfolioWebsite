@@ -275,7 +275,7 @@ function App() {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">ML Loan Prediction WebApp</h2>
-                  <p>Loan accpetance prediction model wrapped in a Flask API and React frontend.</p>
+                  <p>Loan acceptance prediction model wrapped in a Flask API and React frontend.</p>
                   <div className="card-actions justify-between">
                     <a href="https://github.com/marvcodething/loanprediction">
                       <svg
@@ -333,7 +333,7 @@ function App() {
                 </figure>
                 <div className="card-body">
                   <h2 className="card-title">CNVP Interactive Map Project</h2>
-                  <p>Broadband internet accesibility mapping for indigenous populations in California.</p>
+                  <p>Broadband internet accessibility mapping for indigenous populations in California.</p>
                     <div className="card-actions justify-end">
                       <div className="badge badge-outline">Leaflet.js</div>
                       <div className="badge badge-outline">HTML/CSS</div>
