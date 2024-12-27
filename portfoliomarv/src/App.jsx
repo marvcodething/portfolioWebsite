@@ -273,8 +273,8 @@ function App() {
                       <FaLink className="h-5 w-5 fill-stone-300 transform transition-transform duration-200 hover:scale-125 hover:fill-white justify-start" />
                     </a>
                     <div className="card-actions justify-end">
-                      <div className="badge badge-outline">MERN</div>
-                      <div className="badge badge-outline">TailwindCSS</div>
+                      <div className="badge badge-outline">Node.JS + Express.JS</div>
+                      <div className="badge badge-outline">React</div>
                       <div className="badge badge-outline">Mongo</div>
                     </div>
                   </div>
